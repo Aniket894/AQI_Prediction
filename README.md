@@ -125,7 +125,7 @@ The project aims to analyze air quality data based on various features such as d
 │   └── results.html
 │
 ├── static/
-│   ├── plane (1).jpeg
+│   ├── air.jpeg
 │   └── style.css
 │
 ├── app.py
