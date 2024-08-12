@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air Quality Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    
+    <form action="/predict" method="POST">
+        <h1>Air Quality Index Prediction</h1>
+        <label for="Date">Date:</label>
+        <input type="text" id="Date" name="Date" placeholder="YYYY-MM-DD" required><br>
+        
+        <label for="Latitude">Latitude:</label>
+        <input type="number" step="any" id="Latitude" name="Latitude" required><br>
+        
+        <label for="Longitude">Longitude:</label>
+        <input type="number" step="any" id="Longitude" name="Longitude" required><br>
+        
+        <label for="PM2.5">PM2.5:</label>
+        <input type="number" step="any" id="PM2.5" name="PM2.5" required><br>
+        
+        <label for="PM10">PM10:</label>
+        <input type="number" step="any" id="PM10" name="PM10" required><br>
+        
+        <label for="NH3">NH3:</label>
+        <input type="number" step="any" id="NH3" name="NH3" required><br>
+        
+        <label for="SO2">SO2:</label>
+        <input type="number" step="any" id="SO2" name="SO2" required><br>
+        
+        <button type="submit">Predict</button>
+    </form>
+</body>
+</html>
